@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>My first Vue app</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
-        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>    
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
     <body>
@@ -26,7 +26,7 @@
             </tr>
           </table>
         </div>
-        
+
         <script>
         const appdata = {
           data() {
@@ -37,7 +37,7 @@
           },
           mounted() {
             // バックエンドのエンドポイントを適切なものに変更してください
-            const backendEndpoint = 'http://localhost:30000/notes_from_b';
+            const backendEndpoint = 'http://153.120.121.157:30052/notes_from_b';
 
             // AXIOSを使用してデータを取得
             axios.get(backendEndpoint)
